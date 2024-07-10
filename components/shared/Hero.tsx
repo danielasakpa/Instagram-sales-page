@@ -17,7 +17,7 @@ const Hero = () => {
           <span className="font-semibold">30 ideas</span> of posts to fit your
           unique account.
         </p>
-        <button className="w-full flex gap-2 items-center justify-center px-8 py-3 mt-8 lg:mt-6 bg-foreground rounded-md text-white text2 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
+        <button className="w-full lg:w-[max-content] flex gap-2 items-center justify-center px-8 py-3 mt-8 lg:mt-6 bg-foreground rounded-md text-white text2 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
           Click here for instance access
           <svg
             fill="none"
