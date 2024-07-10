@@ -67,7 +67,7 @@ const Home = () => {
               title={section.title}
               points={section.points}
               mark={section.mark}
-              style="bg-accent opacity-90 p-8 lg:px-12 w-[95%] lg:max-w-[400px] shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]"
+              style="bg-accent opacity-90 p-12 lg:px-12 w-[95%] lg:max-w-[400px] shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]"
             />
           ))}
         </div>
@@ -92,7 +92,7 @@ const Home = () => {
           </span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 justify-items-center place-content-center  my-10 lg:mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 justify-items-center place-content-center  my-6 lg:mt-16">
           {cardsData.map((card, index) => (
             <div
               key={index}
@@ -113,7 +113,20 @@ const Home = () => {
           ))}
         </div>
 
-        <button className="p-semibold-20 text2 flex gap-2 items-center px-4 py-2 mt-8 lg:mt-12 opacity-90 rounded-md border border-primary bg-neutral-100 text-foreground text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
+        
+
+        <div className="flex justify-center items-center bg-foreground text-white w-full p-10 lg:p-12 mt-12 rounded-lg shadow-[5px_5px_rgba(105,_132,_116,_0.4),_10px_10px_rgba(105,_132,_116,_0.3),_15px_15px_rgba(105,_132,_116,_0.2),_20px_20px_rgba(105,_132,_116,_0.1),_25px_25px_rgba(105,_132,_116,_0.05)]">
+          <span className="p-medium-24 text2 text-center">
+            Wanna know the best part? As an{" "}
+            <span className="h5-bold text-[#D10363]">InstaBucks</span> member, our
+            team will send you a new calendar every month. And you can submit
+            real-time feedback on your calendar, so it’ll just keep getting{" "}
+            <span className="h5-bold text-[#D10363]">better and better.</span>
+          </span>
+        </div>
+      </section>
+
+      <button className="p-semibold-20 text2 flex gap-2 items-center px-4 py-2 mt-20 opacity-90 rounded-md border border-primary bg-neutral-100 text-foreground text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
           Yap, I want this!
           <svg
             fill="none"
@@ -132,17 +145,7 @@ const Home = () => {
           </svg>
         </button>
 
-        <div className="flex justify-center items-center bg-foreground text-white w-full p-10 lg:p-12 mt-16 rounded-lg shadow-[5px_5px_rgba(105,_132,_116,_0.4),_10px_10px_rgba(105,_132,_116,_0.3),_15px_15px_rgba(105,_132,_116,_0.2),_20px_20px_rgba(105,_132,_116,_0.1),_25px_25px_rgba(105,_132,_116,_0.05)]">
-          <span className="p-medium-24 text2 text-center">
-            Wanna know the best part? As an{" "}
-            <span className="h5-bold text-[#D10363]">InstaBucks</span> member, our
-            team will send you a new calendar every month. And you can submit
-            real-time feedback on your calendar, so it’ll just keep getting{" "}
-            <span className="h5-bold text-[#D10363]">better and better.</span>
-          </span>
-        </div>
-      </section>
-
+      
       <section>
         <InfiniteMovingCards />
       </section>
@@ -165,7 +168,7 @@ const Home = () => {
               title={section.title}
               points={section.points}
               mark={section.mark}
-              style="lg:py-12 px-16 basis-1/2 bg-accent opacity-90 w-[95%] max-w-[400px] shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]"
+              style="p-12 lg:py-12 lg:px-16 basis-1/2 bg-accent opacity-90 w-[95%] max-w-[400px] shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]"
             />
           ))}
         </div>
@@ -190,7 +193,7 @@ const Home = () => {
         </button>
       </section>
 
-      <section className="wrapper mt-36">
+      <section className="wrapper mt-28 lg:mt-36">
         <h2 className="h2-large text-center text3 mb-24 xl:leading-[108px] text-foreground">
           WHAT’S INSIDE <br />
           <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-primary relative inline-block">
